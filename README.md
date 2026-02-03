@@ -1,52 +1,92 @@
-🚗 CAR PICK COIN
+# 🚗 CAR PICK COIN
+
 A simple 3D endless-style Unity game where the player controls a car moving forward on a dynamically generated platform while collecting coins.
 
-🎮 Gameplay Overview
-The car moves forward continuously on a platform
-The platform is generated dynamically as the car moves ahead
-Random coins spawn on the platform
-Collecting coins increases the score displayed in the UI
+This project focuses on core gameplay programming, procedural generation, and UI score handling.
 
-Player can move the car:
+---
 
-A → Move Left
+## 🎮 Gameplay Description
 
-D → Move Right
-If the car falls off the platform, the game restarts
+- The car moves forward continuously on a plane
+- The platform is generated dynamically as the car moves forward
+- Random coins spawn on the platform
+- When the car touches a coin, the score updates in the UI
+- Player controls:
+  - **A** → Move Left
+  - **D** → Move Right
+- If the car falls off the platform, the game restarts automatically
 
- Core Mechanics Implemented
- 
-Player movement and input handling
-Procedural platform generation
-Random coin spawning
-Coin collision detection
-Score system with UI updates
-Game restart logic on fall detection
+---
 
-🛠 Tech Stack
+## 📸 Screenshots
 
-Unity
+### 🟢 Game Start
+![Game Start](Game_start.png)
 
-C#
+### 🟡 Platform Generation & Coin Collection
+![Platform Generation](platform_generation_and_point_update.png)
 
-Object-Oriented Programming
+### 🔴 Falling Off the Platform
+![Fall Off](Fall_off.png)
 
-📂 Scripts Included
+### ❌ Game Over Screen
+![Game Over](Game_over.png)
 
-Player.cs – Car movement and controls
+---
 
-LevelGeneration.cs – Dynamic platform generation
+## 🧠 Core Scripts Overview
 
-Coin.cs – Coin collection logic
+- **Player.cs**  
+  Handles car movement and player input (A/D keys)
 
-GameManager.cs – Game state and restart handling
+- **LevelGeneration.cs**  
+  Dynamic platform generation as the car moves forward
 
-UIManager.cs – Score UI updates
+- **Coin.cs**  
+  Coin collection logic and interaction with the player
 
-AudioManager.cs – Sound handling
+- **UIManager.cs**  
+  Updates score UI when coins are collected
 
-SceneSwitcher.cs – Scene reload logic
+- **GameManager.cs**  
+  Manages game state and restart logic
 
-🎯 Purpose
+- **SceneSwitcher.cs**  
+  Reloads the scene when the player falls off
 
-This project showcases core gameplay programming skills, procedural level generation, and clean game logic structure.# CAR-PICK-COIN
+- **AudioManager.cs**  
+  Handles sound effects
+
+---
+
+## 🛠 Tech Stack
+
+- Unity (3D)
+- C#
+- Unity UI System
+
+---
+
+## 🎯 Purpose of This Project
+
+This project showcases:
+- Core gameplay programming
+- Procedural level generation
+- Collision detection
+- UI score management
+- Clean and modular game logic structure
+
+---
+
+## 📌 Future Improvements (Optional)
+
+- Add obstacles
+- Increase difficulty over time
+- Add sound effects and background music
+- Add main menu and pause system
+- Mobile touch controls
+
+---
+
+⭐ If you like this project, feel free to star the repository!
